@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<title>유저의 블로그</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./postype.css">
+
+</head>
+<body>
+
+<p class="nav-skip">
+	<a href="#postContentList">포스트 목록 바로가기</a>
+	<a href="#postWriterInfo">작가 소개 바로가기</a>
+</p>
+<hr>
+
+
+<div class="header-background-wrap">
+<header class="header-wrap">
+<div class="common-wrap">
+
+    <h1>
+        <a href="/" title="포스타입 로고" class="common-logo header-logo">
+            <span class="hide">포스타입</span>
+        </a>
+    </h1>
+
+    <aside class="common-search-wrap header-search-layout">
+        <h2 class="hide">포스트 검색</h2>
+
+		<label for="searchPost">
+        	<input type="text" class="common-search-input" id="searchPost">
+		</label>
+
+		<button type="button" title="검색" class="common-search-btn">검색</button>
+
+	</aside>
+
+	<nav class="header-side-nav-layout">
+		<h2 class="hide">유저 메뉴</h2>
+
+		<button type="button" title="메시지 알림" class="common-round-btn common-notification-btn">
+			<span class="hide">메시지 알림 창</span>
+		</button>
+
+		<button type="button" title="프로필" class="common-round-btn common-profile-btn">
+			<span class="hide">유저 프로필 창</span>
+			<em class="common-user-name">이름</em>
+		</button>
+	</nav>
+
+</div>
+</header>
+<hr>
+
+<div class="common-wrap">
+<a href="홈" class="postype-title-wrap">
+	<h3 class="postype-title">블로그 제목</h3>
+	<p class="postype-subtitle">블로그 부제목</p>
+</a>
+</div>
+<hr>
+
+<nav class="common-wrap postype-nav-wrap">
+	<h2 class="hide">블로그 메뉴</h2>
+
+	<a href="아이디/" class="active">포스트</a>
+	<a href="아이디/about">소개</a>
+
+	<button type="button" class="none postype-nav-subscribe-btn">
+		구독
+	</button>
+	<button type="button" class="postype-nav-option-btn">
+		<span class="hide">사용자 옵션</span>
+	</button>
+</nav>
+<hr>
+</div>
+
+
+<main class="postype-main-wrap ">
+<div class="common-wrap">
+
+    <div class="post-cotent-and-writer-wrap">
+    <section class="post-content-wrap" id="postContent">
+		<h4 class="hide">포스트 콘텐츠</h4>
+
+		<p class="all-post-count">0 개의 포스트</p>
+
+		<ul class="post-list-wrap">
+			<li class="none no-post">
+				<p>발행된 포스트가 없습니다.</p>
+				<a href="">새 포스트 쓰기</a>
+			</li>
+			<li class="post-notice">
+				<a href="" class="post-link post-notice-link">
+					<h5 class="post-notice-title">공지사항</h5>
+					<p class="post-create-date">2020-11-11</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="post-link">
+					<h5 class="post-title">컨텐츠 제목</h5>
+					<p class="post-subtitle">부제목</p>
+					<p class="post-content">내용</p>
+				</a>
+			</li>
+			<li>
+				<a href="" class="post-link">
+					<h5 class="post-title">컨텐츠 제목</h5>
+					<p class="post-subtitle">부제목</p>
+					<p class="post-content">내용</p>
+				</a>
+			</li>
+		</ul>
+
+        <p class="post-pagination-wrap">
+			<span class="prev-btn-wrap none">
+				<span class="hide">이전 페이지 없음</span>
+			</span>
+
+			<span class="">
+				<a href="" class="prev-btn">
+					<span class="hide">이전 페이지</span>
+				</a>
+			</span>
+
+			<a href="" class="on" title="현재 페이지">1</a>
+			<a href="">2<span class="hide">번째 페이지</span></a>
+			<a href="">3<span class="hide">번째 페이지</span></a>
+
+			<span class="">
+				<a href="" class="next-btn">
+					<span class="hide">다음 페이지</span>
+				</a>
+			</span>
+
+			<span class="next-btn-wrap none">
+				<span class="hide">다음 페이지 없음</span>
+			</span>
+        </p>
+
+    </section>
+	<hr>
+
+
+    <article class="post-writer-info-wrap" id="postWriter">
+        <h4 class="hide">포스트 작가 소개</h4>
+
+		<p class="writer-logo-wrap">
+			<a href="/" title="포스타입" class="common-logo writer-logo">
+				<span class="hide">포스타입 바로가기</span>
+			</a>
+		</p>
+
+		<dl class="writer-profile-wrap">
+			<dt class="hide">작가 이름
+			<dd class="post-writer-name">아이디
+			<dt class="post-subscriber">구독자
+			<dd class="post-subscriber">111
+			<dt class="hide">포스트 설명
+			<dd class="post-intro">설명
+			<dt class="post-open-date">포스트 개설일
+			<dd class="post-open-date">2020-11-11
+			<dt class="hide">트위터 주소
+			<dd class="twitter-link"><a href="">@주소</a>
+		</dl>
+
+    </article>
+    </div>
+
+</div>
+</main>
+<hr>
+
+
+<footer class="footer-wrap">
+<div class="common-wrap footer-layout">
+
+    <h2 class="hide">하단</h2>
+
+    <button type="button" title="페이지 맨 위로" class="back-to-top-btn">
+		맨위로
+	</button>
+
+    <p>
+		<em class="common-user-name">유저</em>
+		© 2020
+	</p>
+
+</div>
+</footer>
+
+
+</body>
+</html>

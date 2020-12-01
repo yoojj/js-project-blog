@@ -1,0 +1,179 @@
+/* 스타일 공통 */
+.common-wrap {position:relative;width:1000px;margin:0 auto;}
+
+.common-round-btn {display:inline-block;width:35px;height:35px;vertical-align:middle;border-radius:20px;}
+
+
+
+/* 컴포넌트 공통 */
+.common-logo {display:inline-block;width:35px;height:35px;
+    border-radius:5px;background:#000;}
+.common-logo::before {display:inline;content:"P";font-weight:bold;font-size:35px;color:#fff;}
+
+
+.common-search-wrap {position:relative;width:max-content;}
+.common-search-input {width:250px;padding:8px 16px;
+    border-radius:25px;box-shadow:0 3px 3px #eee;box-sizing:border-box;}
+.common-search-btn {position:absolute;top:1px;right:1px;width:46px;height:36px;
+    font-size:14px;color:#aaa;border-radius:25px;}
+.common-search-btn:hover {color:#333;background:#f5f5f5;}
+
+
+.common-notification-btn {margin-right:6px;color:#ccc;}
+.common-notification-btn:hover {color:#333;background:#f5f5f5;}
+.common-notification-btn::before {display:inline-block;content:"💡";margin-top:1px;margin-left:-3px;font-size:23px;line-height:1;}
+
+.common-profile-btn {width:33px;height:33px;background:#ae905e;}
+.common-profile-btn:hover {opacity:.5;}
+.common-profile-btn em {margin-left:-2px;font-size:13px;white-space:nowrap;color:#fff;}
+
+
+.common-user-name {font-style:normal;}
+
+
+
+/********** 상단 이미지 **********/
+/* bg 옵션 */
+.header-background-wrap {background:#fff;}
+
+
+
+/********** 상단 **********/
+
+.header-wrap {position:fixed;padding:15px 0;z-index:99999;}
+
+/* 로고 */
+.header-logo:hover {background:blue;}
+
+/* 검색 */
+.header-search-layout {position:absolute;top:2px;right:90px;}
+
+/*** 알림 및 프로필 메뉴 ***/
+.header-side-nav-layout {position:absolute;top:2px;right:0;width:max-content;}
+
+
+
+/***** 포스타입 제목 *****/
+.postype-title-wrap {display:block;padding:150px 0 50px;}
+.postype-title {margin-bottom:5px;font-size:38px;}
+.postype-subtitle {font-size:18px;}
+
+/* 스크롤
+.postype-title-wrap {position:fixed;display:block;
+    margin:20px 0 0 55px;padding:0;z-index:99999;}
+.postype-title {margin-bottom:0;font-size:20px;}
+.postype-title:hover {color:#999;}
+.postype-title::before {display:inline;content:"";margin-right:20px;border-left:1px solid #ccc;}
+.postype-subtitle {display:none;}
+*/
+
+
+/***** 포스타입 메뉴 *****/
+.postype-nav-wrap {position:relative;}
+.postype-nav-wrap a {display:inline-block;margin-right:50px;padding:10px 0;
+    font-weight:bold;font-size:18px;color:#999;}
+.postype-nav-wrap a:hover {color:#333;}
+.postype-nav-wrap a.active {color:#333;border-bottom:2px solid #333;}
+
+/* 구독 버튼 */
+.postype-nav-subscribe-btn {position:absolute;top:5px;right:0;padding:5px 10px;
+    font-size:14px;border-radius:3px;border:thin solid #333;}
+.postype-nav-subscribe-btn::before {display:inline;content:"+";}
+.postype-nav-subscribe-btn:hover {color:#fff;background:#333;}
+
+/* 사용자 옵션 버튼 */
+.postype-nav-option-btn {position:absolute;top:5px;right:0;padding:10px;border-radius:25px;}
+.postype-nav-option-btn::after {display:inline;content:"✏️";vertical-align:middle;line-height:1;}
+.postype-nav-option-btn:hover {background:#f5f5f5;}
+
+
+
+/********** 메인 **********/
+.postype-main-wrap {margin:50px 0;}
+
+
+/***** 포스트 + 작가 *****/
+.post-cotent-and-writer-wrap {position:relative;}
+
+
+/*** 포스트 영역 ***/
+.post-content-wrap {width:65%;}
+
+.all-post-count {padding-bottom:10px;border-bottom:1px solid #eee;}
+
+/* 포스트 */
+.post-list-wrap {}
+
+.post-link {display:block;padding:25px 0;border-bottom:1px solid #eee;}
+.post-title {margin-bottom:8px;font-weight:600;font-size:18px;}
+.post-subtitle {display:inline-block;font-weight:600;font-size:14px;color:#888;}
+.post-content {display:inline-block;font-size:14px;color:#888;}
+.post-content::before {display:inline;content:"|";margin-left:5px;margin-right:10px;}
+
+.post-list-wrap .no-post {padding:50px 0;font-size:14px;text-align:center;}
+.post-list-wrap .no-post > p {margin-bottom:15px;color:#999;}
+.post-list-wrap .no-post > a {padding:7px 15px;border-radius:5px;border:1px solid #e5e5e5;}
+.post-list-wrap .no-post > a:hover {color:#fff;border-color:blue;background:blue;}
+
+.post-notice {}
+.post-notice-link {padding:15px 0;font-size:0;line-height:0;}
+.post-notice-title {display:inline-block;width:80%;font-weight:600;font-size:14px;}
+.post-notice-title::before {display:inline;content:"공지";margin-right:5px;padding:1px 3px;
+    font-size:11px;border-radius:9px;border:1px solid #666;}
+.post-create-date {display:inline-block;width:20%;
+    font-size:14px;text-align:right;background:Yellow;color:#999;}
+
+
+/* 페이지네이션 */
+.post-pagination-wrap {width:max-content;margin:25px auto;}
+
+.post-pagination-wrap a {padding:5px 10px;color:#999;border-radius:3px;border:1px solid #fff;}
+.post-pagination-wrap > a:hover {border-color:#aaa;}
+.post-pagination-wrap > a.on {color:#333;border-color:#333;}
+
+.prev-btn-wrap::after {display:inline;content:"<";margin-right:15px;color:#999;}
+.next-btn-wrap::after {display:inline;content:">";margin-left:10px;color:#999;}
+
+.prev-btn:hover {border-color:#aaa;}
+.prev-btn::after {display:inline;content:"<";color:#333;}
+
+.next-btn:hover {border-color:#aaa;}
+.next-btn::before {display:inline;content:">";color:#333;}
+
+
+/*** 작가 프로필 영역 ***/
+.post-writer-info-wrap {position:absolute;top:0;right:0;width:30%;padding:25px;
+    box-sizing:border-box;
+    border-radius:15px;background:#f5f5f5;}
+
+/* 로고 */
+.writer-logo-wrap {position:absolute;top:25px;left:25px;width:max-content;}
+.writer-logo {padding:5px;text-align:center;background:blue;}
+.writer-logo::before {font-size:25px;}
+
+/* 프로필 */
+.writer-profile-wrap {}
+.writer-profile-wrap .post-writer-name {margin:5px 0 0 55px;}
+.writer-profile-wrap .post-subscriber {display:inline-block;font-size:13px;color:#999;}
+.writer-profile-wrap dt.post-subscriber {margin-left:55px;}
+.writer-profile-wrap dt.post-subscriber::after {display:inline;content:":";margin-right:5px;}
+.writer-profile-wrap dd.post-subscriber {margin-bottom:20px;}
+.writer-profile-wrap .post-intro {margin-bottom:20px;padding-bottom:20px;
+    font-size:15px;color:#666;
+    border-bottom:thin solid #ccc;}
+.writer-profile-wrap .post-open-date {display:inline-block;margin-bottom:10px;
+    font-size:14px;color:#999;}
+.writer-profile-wrap dt.post-open-date {margin-right:10px;}
+.writer-profile-wrap dt.post-open-date::before {display:inline;content:"📅";margin-right:10px;}
+
+.writer-profile-wrap dd.twitter-link {font-size:14px;color:#999;}
+.writer-profile-wrap dd.twitter-link::before {display:inline;content:"❤️";margin-right:10px;}
+.writer-profile-wrap dd.twitter-link:hover {color:skyblue;}
+
+/********** 하단 **********/
+.footer-wrap {padding:25px 0;background:#f5f5f5;}
+.footer-layout {position:relative;}
+
+.back-to-top-btn {position:absolute;top:0;right:0;}
+.back-to-top-btn::before {display:inline;content:"▲";padding-right:5px;}
+.back-to-top-btn:hover {opacity:.5;}
