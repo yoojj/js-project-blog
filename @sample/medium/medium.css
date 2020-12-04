@@ -1,0 +1,139 @@
+.common-wrap {position:relative;width:1000px;margin:0 auto;}
+
+
+.common-logo {width:max-content;}
+.common-logo svg {width:40px;}
+
+.common-user-name {font-weight:600;font-style:normal;}
+
+.common-round-box {padding:10px 15px;border-radius:5px;border:thin solid #333;}
+
+
+
+/********** 상단 **********/
+.header-wrap {padding:40px 0;border-bottom:thin solid #eee;}
+
+/* 로고 */
+.header-logo {position:absolute;top:6px;right:0;}
+
+.header-user-name {display:inline-block;max-width:250px;margin-right:20px;
+    font-weight:900;font-size:25px;font-family:"Gothic A1", sans-serif;
+    white-space:nowrap;text-overflow:ellipsis;vertical-align:middle;
+    overflow:hidden;}
+
+
+/****** 상단 메뉴 *****/
+.header-nav-wrap {position:relative;display:inline-block;}
+.header-nav-wrap * {font-size:14px;line-height:1;}
+
+/* 팔로워 수 */
+.header-nav-followers {font-weight:600;font-style:normal;color:#888;}
+.header-nav-followers::after {display:inline;content:"·";margin:0 5px 0 10px;}
+
+/* 어바웃 링크 */
+.header-nav-about {font-weight:600;color:#888;}
+.header-nav-about:hover {color:#333;}
+
+/* 팔로우 버튼 */
+.header-nav-follow-btn {margin-left:15px;}
+.header-nav-follow-btn:hover {color:#fff;background:#333;}
+
+/* 스타트 버튼 */
+.header-nav-start-btn {position:absolute;right:0;color:green;border-color:green;}
+.header-nav-start-btn:hover {color:#fff;background:green;}
+
+
+/*** 검색 ***/
+.header-nav-search-wrap {position:absolute;top:-3px;right:50px;
+    width:max-content;overflow:hidden;}
+
+/* 검색 버튼 */
+.header-nav-search-btn {margin:1px;padding:5px 3px;}
+.header-nav-search-btn::before {display:inline;content:"🔍";font-size:16px;}
+.header-nav-search-btn:active,
+.header-nav-search-btn:focus {margin:-1px;}
+
+.header-nav-search-label {position:absolute;right:-250px;
+    -webkit-transition:right .25s;}
+.header-nav-search-input {width:250px;padding:5px 10px;font-size:16px;
+    border:0 none;border-bottom:1px solid #333;box-sizing:border-box;}
+
+/* 임시 */
+.header-nav-search-wrap button:active ~ label,
+.header-nav-search-wrap button:focus ~ label {position:relative;right:0;}
+
+.searchBtnOn {position:relative;right:0}
+
+/* 유저 모달 버튼 */
+.header-nav-user-modal-btn {position:absolute;top:-6px;right:0;padding:10px 6px;border-radius:30px;background:green;}
+.header-nav-user-modal-btn * {font-size:12px;color:#fff;line-height:1;}
+
+
+
+/********** 메인 **********/
+.main-wrap {padding:75px 0;}
+
+/***** 포스트 *****/
+.main-post-wrap {width:75%;margin-left:25%;}
+
+.post-list-wrap {}
+.post-list-wrap li {position:relative;padding-top:50px;padding-bottom:50px;border-bottom:1px solid #e5e5e5;}
+.post-list-wrap li:first-child {padding-top:25px;}
+.post-list-wrap li:first-child time {top:0;}
+
+.post-title {margin-bottom:25px;font-size:36px;}
+.post-created-time {position:absolute;top:30px;font-size:14px;color:#666;}
+.post-content {font-size:20px;}
+
+/* 페이지네이션 */
+.post-pagination-wrap {width:max-content;margin:25px auto;}
+
+.post-pagination-wrap a {padding:5px 10px;color:#999;border-radius:3px;border:1px solid #fff;}
+.post-pagination-wrap > a:hover {border-color:#aaa;}
+.post-pagination-wrap > a.on {color:#333;border-color:#333;}
+
+.prev-btn-wrap::after {display:inline;content:"<";margin-right:15px;color:#999;}
+.next-btn-wrap::after {display:inline;content:">";margin-left:10px;color:#999;}
+
+.prev-btn:hover {border-color:#aaa;}
+.prev-btn::after {display:inline;content:"<";color:#333;}
+
+.next-btn:hover {border-color:#aaa;}
+.next-btn::before {display:inline;content:">";color:#333;}
+
+
+
+/***** 프로필 *****/
+.main-user-profile-wrap {position:absolute;top:0;width:20%;}
+/*
+스크롤시
+.main-user-profile-wrap {position:fixed;top:20%;}
+*/
+
+.profile-img-wrap {width:80%;min-height:160px;background:green;}
+.profile-img {min-width:100%;}
+
+.profile-img-wrap {text-align:center;}
+.profile-img-wrap span {display:inline-block;margin-top:50px;
+    font-size:35px;color:#fff;}
+
+.profile-user-name {display:inline-block;margin-top:15px;}
+
+.profile-user-bio {margin-top:5px;font-size:14px;color:#666;}
+
+
+
+/********** 하단 **********/
+.footer-wrap {padding:30px 0;background:#333;}
+
+/* 로고 */
+.footer-logo {}
+.footer-logo a {font-size:30px;font-family:"Times New Roman", Times, serif;
+    color:#fff;letter-spacing:-1px;}
+.footer-logo svg {fill:#fff;vertical-align:baseline;}
+.footer-logo:hover * {color:#aaa;fill:#aaa;}
+
+/* 하단 메뉴 */
+.footer-nav-wrap {position:absolute;top:9px;right:0;width:max-content;}
+.footer-nav-wrap a {margin-left:15px;color:#fff;}
+.footer-nav-wrap a:hover {text-decoration:underline;}
