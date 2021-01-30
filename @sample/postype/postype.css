@@ -1,23 +1,19 @@
-/* 스타일 공통 */
 .common-wrap {position:relative;width:1000px;margin:0 auto;}
 
 .common-round-btn {display:inline-block;width:35px;height:35px;vertical-align:middle;border-radius:20px;}
 
-
-
-/* 컴포넌트 공통 */
+/* 로고 컴포넌트 */
 .common-logo {display:inline-block;width:35px;height:35px;
     border-radius:5px;background:#000;}
 .common-logo::before {display:inline;content:"P";font-weight:bold;font-size:35px;color:#fff;}
 
-
+/* 검색 컴포넌트 -- 만약 한 번만 사용한다면 컴포넌트에서 제외 */
 .common-search-wrap {position:relative;width:max-content;}
 .common-search-input {width:250px;padding:8px 16px;
     border-radius:25px;box-shadow:0 3px 3px #eee;box-sizing:border-box;}
 .common-search-btn {position:absolute;top:1px;right:1px;width:46px;height:36px;
     font-size:14px;color:#aaa;border-radius:25px;}
 .common-search-btn:hover {color:#333;background:#f5f5f5;}
-
 
 .common-notification-btn {margin-right:6px;color:#ccc;}
 .common-notification-btn:hover {color:#333;background:#f5f5f5;}
@@ -27,20 +23,18 @@
 .common-profile-btn:hover {opacity:.5;}
 .common-profile-btn em {margin-left:-2px;font-size:13px;white-space:nowrap;color:#fff;}
 
-
 .common-user-name {font-style:normal;}
 
 
 
 /********** 상단 이미지 **********/
-/* bg 옵션 */
 .header-background-wrap {background:#fff;}
 
 
 
 /********** 상단 **********/
-
-.header-wrap {position:fixed;padding:15px 0;z-index:99999;}
+/* 상단 이미지와 동일한 배경을 가져야 함 */
+.header-wrap {position:fixed;padding:15px 0;background:inherit;z-index:1;}
 
 /* 로고 */
 .header-logo:hover {background:blue;}
@@ -58,7 +52,7 @@
 .postype-title {margin-bottom:5px;font-size:38px;}
 .postype-subtitle {font-size:18px;}
 
-/* 스크롤
+/* 스크롤되면 이하 스타일 활성화
 .postype-title-wrap {position:fixed;display:block;
     margin:20px 0 0 55px;padding:0;z-index:99999;}
 .postype-title {margin-bottom:0;font-size:20px;}
@@ -68,7 +62,12 @@
 */
 
 
+
 /***** 포스타입 메뉴 *****/
+/*
+스크롤되면 이하 스타일 활성화
+.postype-nav-sticky {position:fixed;top:상단 높이;left:0;right:0;margin:0 auto;z-index:2;}
+*/
 .postype-nav-wrap {position:relative;}
 .postype-nav-wrap a {display:inline-block;margin-right:50px;padding:10px 0;
     font-weight:bold;font-size:18px;color:#999;}
@@ -169,6 +168,8 @@
 .writer-profile-wrap dd.twitter-link {font-size:14px;color:#999;}
 .writer-profile-wrap dd.twitter-link::before {display:inline;content:"❤️";margin-right:10px;}
 .writer-profile-wrap dd.twitter-link:hover {color:skyblue;}
+
+
 
 /********** 하단 **********/
 .footer-wrap {padding:25px 0;background:#f5f5f5;}
