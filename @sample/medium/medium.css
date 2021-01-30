@@ -28,9 +28,9 @@
 
 /* 팔로워 수 */
 .header-nav-followers {font-weight:600;font-style:normal;color:#888;}
-.header-nav-followers::after {display:inline;content:"·";margin:0 5px 0 10px;}
 
 /* 어바웃 링크 */
+.header-nav-about::before {display:inline;content:"·";margin:0 5px 0 10px;}
 .header-nav-about {font-weight:600;color:#888;}
 .header-nav-about:hover {color:#333;}
 
@@ -58,7 +58,7 @@
 .header-nav-search-input {width:250px;padding:5px 10px;font-size:16px;
     border:0 none;border-bottom:1px solid #333;box-sizing:border-box;}
 
-/* 임시 */
+/* !!임시 수정되어야 함 */
 .header-nav-search-wrap button:active ~ label,
 .header-nav-search-wrap button:focus ~ label {position:relative;right:0;}
 
@@ -88,25 +88,36 @@
 /* 페이지네이션 */
 .post-pagination-wrap {width:max-content;margin:25px auto;}
 
-.post-pagination-wrap a {padding:5px 10px;color:#999;border-radius:3px;border:1px solid #fff;}
-.post-pagination-wrap > a:hover {border-color:#aaa;}
-.post-pagination-wrap > a.on {color:#333;border-color:#333;}
+.post-pagination-wrap a {margin:0 1px;padding:5px;color:#999;border-radius:3px;border:1px solid #fff;}
+.post-pagination-wrap a:hover {border-color:#aaa;}
 
-.prev-btn-wrap::after {display:inline;content:"<";margin-right:15px;color:#999;}
-.next-btn-wrap::after {display:inline;content:">";margin-left:10px;color:#999;}
+.page-on {margin:0 1px;padding:5px 5px 5px 10px;color:#fff;border-radius:3px;background:#333;}
 
-.prev-btn:hover {border-color:#aaa;}
-.prev-btn::after {display:inline;content:"<";color:#333;}
+a.page-prev-btn,
+a.page-next-btn {padding:5px 10px;}
 
-.next-btn:hover {border-color:#aaa;}
-.next-btn::before {display:inline;content:">";color:#333;}
+.page-prev-btn::after {display:inline;content:"<";color:#999;}
+.page-next-btn::after {display:inline;content:">";color:#999;}
+
+.page-prev-btn:hover,
+.page-next-btn:hover {border-color:#999;}
+
+
+a.page-start-btn,
+a.page-end-btn {margin:0 -1px;}
+
+.page-start-btn::after {display:inline;content:"<<";color:#999;}
+.page-end-btn::after {display:inline;content:">>";color:#999;}
+
+.page-start-btn:hover,
+.page-end-btn:hover {border-color:#999;}
 
 
 
 /***** 프로필 *****/
 .main-user-profile-wrap {position:absolute;top:0;width:20%;}
 /*
-스크롤시
+스크롤되면 이하 스타일 활성화
 .main-user-profile-wrap {position:fixed;top:20%;}
 */
 

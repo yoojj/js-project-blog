@@ -49,6 +49,10 @@
 		Name
 	</em>
 
+	<!--
+	160px은 유저 이름을 갖고있는 박스의 너비로
+	160px은 임시로 넣은 값이고 스크립트로 박스 너비를 넣어야 함
+	-->
 	<nav class="header-nav-wrap" style="width:calc(100% - 160px);">
 		<h2 class="hide">user menu</h2>
 
@@ -57,12 +61,12 @@
 			10K Followers
 		</em>
 
-		<a href="/about" class="header-nav-about">
+		<!-- 유저가 아닌 경우 활성화
+		<a href="" class="header-nav-about">
 			<span class="hide">소개 페이지 바로가기</span>
 			About
 		</a>
 
-		<!-- !유저 -->
 		<button type="button" class="common-round-box header-nav-follow-btn">
 			<span class="hide">팔로우하기</span>
 			Follow
@@ -70,12 +74,15 @@
 		<button type="button" class="common-round-box header-nav-start-btn">
 			<span class="hide">미디엄 시작하기</span>
 			Get started
-		</button>
+		</button>-->
 
-		<!-- 유저
+		<!-- 유저인 경우 활성화 -->
 		<aside class="header-nav-search-wrap">
 	        <h3 class="hide">post search</h3>
 
+			<!--
+			!! input에 포커스 될 경우 애니메이션 수정 필요
+			-->
 			<button type="button" title="검색" class="header-nav-search-btn">
 				<span class="hide">포스트 검색</span>
 			</button>
@@ -89,7 +96,6 @@
 		<button tpye="button" class="header-nav-user-modal-btn">
 			<span class="common-user-name">이름</span>
 		</button>
-		 -->
 
 	</nav>
 
@@ -119,29 +125,40 @@
 		</ul>
 
 		<p class="post-pagination-wrap">
-			<span class="prev-btn-wrap none">
-				<span class="hide">이전 페이지 없음</span>
+			<!--
+			<span class="page-start-btn-wrap">
+				<a href="" class="page-start-btn">
+					<span class="hide">첫 번째 페이지</span>
+				</a>
 			</span>
-
-			<span class="">
-				<a href="" class="prev-btn">
+			-->
+			<span class="page-prev-btn-wrap">
+				<a href="" class="page-prev-btn">
 					<span class="hide">이전 페이지</span>
 				</a>
 			</span>
 
-			<a href="" class="on" title="현재 페이지">1</a>
-			<a href="">2<span class="hide">번째 페이지</span></a>
-			<a href="">3<span class="hide">번째 페이지</span></a>
+			<span class="page-on" title="현재 페이지">
+				1<span class="hide">번째 페이지</span>
+			</span>
 
-			<span class="">
-				<a href="" class="next-btn">
+			<a href="">22<span class="hide">번째 페이지</span></a>
+			<a href="">333<span class="hide">번째 페이지</span></a>
+			<a href="">333<span class="hide">번째 페이지</span></a>
+			<a href="">333<span class="hide">번째 페이지</span></a>
+
+			<span class="page-next-btn-wrap">
+				<a href="" class="page-next-btn">
 					<span class="hide">다음 페이지</span>
 				</a>
 			</span>
-
-			<span class="next-btn-wrap none">
-				<span class="hide">다음 페이지 없음</span>
+			<!--
+			<span class="page-end-btn-wrap">
+				<a href="" class="page-end-btn">
+					<span class="hide">마지막 페이지</span>
+				</a>
 			</span>
+			-->
 		</p>
 
 	</section>
