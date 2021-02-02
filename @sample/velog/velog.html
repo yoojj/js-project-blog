@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<title>유저 아이디(유저 별명) - velog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./velog.css">
+
+</head>
+<body>
+
+<p class="nav-skip">
+	<a href="#postContent">포스트 바로가기</a>
+	<a href="#userProfile">유저 프로필 바로가기</a>
+</p>
+<hr>
+
+
+<header class="header-wrap">
+<div class="common-wrap">
+
+	<h1 class="header-logo-wrap">
+		<a href="https://velog.io/" target="_blank" title="새 창" class="common-logo">
+			<span class="hide">velog</span>
+		</a>
+	</h1>
+
+	<em class="header-user-logo">
+		<span class="hide">사용자 이름이나 블로그 소개글</span>
+		<a href="@userId">
+			사용자 이름이나 블로그 소개글
+		</a>
+	</em>
+
+	<nav class="header-nav-wrap">
+        <h2 class="hide">검색, 로그인 바로가기</h2>
+
+		<a href="search" class="header-search-link">
+			<span class="hide">포스트 검색</span>
+		</a>
+
+		<button type="button" class="header-login-btn" id="userLoginBtn">
+			로그인
+		</button>
+
+		<dialog class="header-login-dialog" id="userLoginDialog">
+		    <h3>로그인</h3>
+
+			<label>
+				이메일로 로그인
+				<input type="text">
+			</label>
+			<button type="submit">로그인</button>
+
+			<nav>
+				<h4>소셜 계정으로 로그인</h4>
+				<span>
+					<a href="">깃허브</a>
+					<a href="">구글</a>
+				</span>
+
+				<h4 class="hide">회원 가입</h4>
+				<p>
+					아직 회원이 아니신가요?
+					<a href="">회원가입</a>
+				</p>
+			</nav>
+
+			<button type="button" id="userLoginDialogCloseBtn">닫기</button>
+		</dialog>
+
+		<script>
+		const openBtn = document.getElementById('userLoginBtn');
+		const closeBtn = document.getElementById('userLoginDialogCloseBtn');
+		const dialog = document.getElementById('userLoginDialog');
+
+		openBtn.addEventListener('click', (e) => {
+			e.preventDefault();
+			dialog.showModal();
+		});
+
+		closeBtn.addEventListener('click', (e) => {
+			e.preventDefault();
+			dialog.close();
+		});
+		</script>
+	</nav>
+
+</div>
+</header>
+<hr>
+
+
+<article class="user-profile-wrap" id="userProfile">
+<div class="common-wrap">
+	<h2 class="hide">유저 프로필</h2>
+
+	<span class="user-profile-img-wrap">
+	<a href="">
+		<img src="https://media.vlpt.us/images/velog/profile/9aa07f66-5fcd-41f4-84f2-91d73afcec28/green%20favicon.png" alt="유저 프로필 이미지">
+	</a>
+	</span>
+
+	<dl class="user-profile-description">
+		<dt class="hide">유저 아이디
+		<dd class="common-user-name user-name">
+			<a href="">
+				유저 아이디
+			</a>
+		</dd>
+		<dt class="hide">블로그 설명
+		<dd class="blog-description">공지사항 및 벨로그 프로젝트 관련 포스트를 올립니다.
+	</dl>
+
+</div>
+</article>
+<hr>
+
+
+<main class="main-content-wrap">
+	<h2 class="hide">블로그 콘텐츠</h2>
+
+	<nav class="main-nav-wrap">
+		<h3 class="hide">블로그 바로가기 메뉴</h3>
+		<a href="" class="on">글</a>
+		<a href="">시리즈</a>
+		<a href="">소개</a>
+	</nav>
+
+	<nav class="main-post-taglist">
+		<h3 class="taglist-title">태그 목록</h3>
+		<ul class="taglist">
+			<li>
+				<a href="" class="on">전체보기</a>
+				<i>100<span class="hide">개의 글이 등록되었습니다.</span></i>
+			</li>
+			<li>
+				<a href="">태그</a>
+				<i>10<span class="hide">개의 글이 등록되었습니다.</span></i>
+			</li>
+			<li>
+				<a href="">기타</a>
+				<i>1<span class="hide">개의 글이 등록되었습니다.</span></i>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="main-post-wrap">
+		<h3 class="hide">포스트</h3>
+
+		<ul class="main-post-list">
+			<li>
+				<a href="" class="post-link">
+					<h5 class="post-title">포스트 제목</h5>
+					<p class="post-content">포스트 내용 포스트 내용 포스트 내용 포스트 내용 포스트 내용 포스트 내용</p>
+				</a>
+				<nav class="post-taglist">
+					<h5 class="hide">관련 태그 목록</h5>
+					<a href="">태그</a>
+					<a href="">기타</a>
+				</nav>
+				<time datetime="2020-02-02">2020년 2월 2일</time>
+				<i class="post-reply">10개의 댓글</i>
+				<img src="https://media.vlpt.us/images/velog/post/ebf87853-b6b7-47af-a659-d97fb39e66b0/velog_logo.png?w=768" alt="포스트 이미지">
+			</li>
+
+			<li>
+				<a href="" class="post-link">
+					<h5 class="post-title">포스트 제목</h5>
+					<p class="post-content">포스트 내용 포스트 내용 포스트 내용 포스트 내용 포스트 내용 포스트 내용</p>
+				</a>
+				<nav class="post-taglist">
+					<h5 class="hide">관련 태그 목록</h5>
+					<a href="">태그</a>
+					<a href="">기타</a>
+				</nav>
+				<time datetime="2020-02-02">2020년 2월 2일</time>
+				<i class="post-reply">10개의 댓글</i>
+				<img src="https://media.vlpt.us/images/velog/post/ebf87853-b6b7-47af-a659-d97fb39e66b0/velog_logo.png?w=768" alt="포스트 이미지">
+			</li>
+		</ul>
+
+	</section>
+
+</main>
+<hr>
+
+
+</body>
+</html>
